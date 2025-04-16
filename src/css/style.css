@@ -1,0 +1,87 @@
+body{
+    font-size: 14px;
+}
+.slick-prev, .slick-next {
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+.slick-prev {
+    left: 10px;
+}
+.slick-next {
+    right: 10px;
+}
+div#google_translate_element span {
+    display: none;
+}
+.skiptranslate.goog-te-gadget {
+    font-size: 0;
+}
+div#google_translate_element .skiptranslate.goog-te-gadget div#\:0\.targetLanguage {
+    font-size: 14px;
+}
+img{max-width: 100%;}
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+/* Slick slider customization */
+.slick-prev, .slick-next {
+    z-index: 10;
+}
+.slick-prev {
+    left: 10px;
+}
+.slick-next {
+    right: 10px;
+}
+/* Ensure videos are visible during sliding */
+.youtube-slider .slick-slide,
+.success-stories-slider .slick-slide {
+    visibility: hidden;
+}
+.youtube-slider .slick-slide.slick-active,
+.success-stories-slider .slick-slide.slick-active {
+    visibility: visible;
+}
+
+/* Fix for YouTube embed issues */
+iframe[src*="youtube.com"] {
+    background-color: #000;
+}
+
+/* YouTube loading indicator */
+.video-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+@keyframes scroll-up {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+  }
+
+  .animate-scroll {
+    animation: scroll-up 15s linear infinite;
+  }
+
+
+
